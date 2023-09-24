@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "noads",
+  "version": "${version}",
+
+  "name": "noads-mc",
+  "description": "In-development adblock tool for anarchy servers ",
+  "authors": [
+    "nimrod"
+  ],
+  "contact": {
+    "sources": "https://github.com/ImaNimrod/noads-mc"
+  },
+
+  "icon": "assets/noads/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.nimrod.noads.NoAds"
+    ]
+  },
+  "mixins": [
+    "noads.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.18",
+    "fabric-api": "*",
+    "minecraft": ">=1.19.4",
+    "java": ">=17"
+  }
+}
